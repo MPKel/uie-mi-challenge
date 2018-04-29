@@ -18,9 +18,11 @@ main {
 }
 
 .main-header {
-  background: linear-gradient(to right, rgba(121,113,102,.5), 25%, rgba(255,255,255,0), 75%, rgba(121,113,102,.5)), linear-gradient(to bottom, rgba(255,255,255,1), 10%, rgba(255,255,255,0), 90%, rgba(255,255,255,1)), url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
+  /* background: linear-gradient(to right, rgba(121,113,102,.5), 25%, rgba(255,255,255,0), 75%, rgba(121,113,102,.5)), linear-gradient(to bottom, rgba(255,255,255,1), 10%, rgba(255,255,255,0), 90%, rgba(255,255,255,1)), url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box; */
+  background: linear-gradient(to right, rgba(245,243,240,1), 20%, rgba(255,255,255,0), 80%, rgba(245,243,240,1)), linear-gradient(to bottom, rgba(255,255,255,0), 90%, rgba(245,243,240,1)), url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
   width: 100vw;
   align-content: center;
+  vertical-align: middle;
   padding: 1rem;
 }
 
@@ -223,9 +225,7 @@ main {
   line-height: 1.6rem;
 }
 
-.special_aside {
-  display: inline-block;
-}
+
 
 .main-footer {
   position: absolute;
@@ -233,7 +233,7 @@ main {
   text-align: center;
   vertical-align: top;
   width: 100%;
-  height: 25vh;
+  height: 22vh;
   background-color: #51525a;
   padding: 1rem;
 }
@@ -241,7 +241,7 @@ main {
 .main-footer__text {
   display: inline-block;
   width: 40%;
-  color: #99999e;
+  color: #ccccd1;
   text-align: left;
   vertical-align: top;
   line-height: 1.5;
@@ -256,8 +256,11 @@ main {
   width: 25%;
 }
 
-@media (max-width: 42rem) {
+@media (max-width: 46rem) {
 
+  .main-header {
+    background:  url("images/background.jpg") left 0% bottom 70%/cover no-repeat border-box;
+  }
   .logo__container {
     height: 15vh;
   }
@@ -291,13 +294,25 @@ main {
     height: 55%;
   }
 
+  .quick-sell__title {
+    margin-left: .5rem;
+  }
+
   .quick-sell__list-cotainer {
     width: 100%;
     margin: auto;
   }
 
+  .quick-sell__list-cotainer h3 {
+    margin-left: .5rem;
+  }
+
   .quick-sell__aside {
     display: none;
+  }
+
+  .special_aside {
+    display: inline-block;
   }
 
   .full-descrip__grid-container {
